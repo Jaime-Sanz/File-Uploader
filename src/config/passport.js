@@ -22,8 +22,8 @@ export function configurePassport(passport) {
                     return done(null, false, {message: 'Incorrect password'});
                 }
                 
-                return(done, user);
-            } catch {
+                return done(null, user);
+            } catch (error) {
                 return done(error);
             }
         })
