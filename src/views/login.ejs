@@ -2,6 +2,20 @@
 <html lang="en">
 <%- include('partials/header') %>
 <body>
-    <h1>Test</h1>
+    <div id="main-container">
+        <div id="left-container"> 
+            <img src="" alt="">
+        </div>
+        <div id="right-container">
+            <form action="/" method="POST">
+                <label for="username">Please enter your username</label>
+                <input type="text" name="username" id="username">
+                <label for="password">Please enter your password</label>
+                <input type="password" name="password" id="password">
+                <button type="submit">Login</button>
+            </form>
+            <h1>Need an account <a href="/sign-up">Sign Up!</a></h1>
+        </div>
+    </div>
 </body>
 </html>

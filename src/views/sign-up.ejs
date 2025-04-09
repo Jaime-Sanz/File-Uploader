@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/header') %>
+<body>
+    <div id="main-container">
+        <form action="/sign-up" method="POST">
+            <label for="username">Please enter your username</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Please enter your password</label>
+            <input type="password" name="password" id="password">
+            <label for="confirmpassword">Enter password again</label>
+            <input type="password" name="confirmpassword" id="confirmpassword">
+            <button type="submit">Sign Up!</button>
+        </form>
+    </div>
+</body>
+</html>
