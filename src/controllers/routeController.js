@@ -12,8 +12,8 @@ export const getSignupPage = (req, res) => {
     res.render('sign-up');
 }
 
-export const getFoldersPage = (req, res) => {
-    res.render('folders');
+export const getDashboardPage = (req, res) => {
+    res.render('dashboard');
 }
 
 export const postSignup = asyncHandler(async (req, res) => {
@@ -44,4 +44,8 @@ export const postSignup = asyncHandler(async (req, res) => {
     });
 
     res.redirect('/');
+});
+
+export const postFolder = asyncHandler(async (req, res) => {
+    
 });
